@@ -10,39 +10,33 @@
     <script src="src/index.js"></script>
 
     <div class="input_area">
-      <input placeholder="ToDoを入力" / >
-      <button>追加</button>
+      <input id="add_text" placeholder="ToDoを入力" / >
+      <button id="add_btn">追加</button>
     </div>
 
     <div class="incomplete_area">
       <p class="title">未完了ToDo</p>
-      <ul>
-        <li>
-          <div class="list_row">
-            <p>todo</p>
-            <button>完了</button>
-            <button>削除</button>
-          </div>
-        </li>
-        <li>
-          <div class="list_row">
-            <p>todo</p>
-            <button>完了</button>
-            <button>削除</button>
-          </div>
-        </li>
+      <ul id="incomplete_lists">
+        <div class="list_row">
+          <li>todo</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+        <div class="list_row">
+          <li>todo</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
       </ul>
     </div>
 
     <div class="complete_area">
       <p class="title" ß>完了したToDo</p>
       <ul>
-        <li>
-          <div class="list_row">
-            <p>ToDoした</p>
-            <button>戻す</button>
-          </div>
-        </li>
+        <div class="list_row">
+          <li>ToDoした</li>
+          <button>戻す</button>
+        </div>
       </ul>
     </div>
   </body>
